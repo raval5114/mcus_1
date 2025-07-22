@@ -1,42 +1,41 @@
-"use client"; // Add this directive at the very top
+import Link from "next/link";
+import ContactForm from "../components/contactForm";
 
-import React, { useState } from 'react';
-// Assuming you have other imports like Link, ContactForm etc.
-// import Link from "next/link"; // If Link is used directly in this component
-// import ContactForm from "../components/contactForm"; // If ContactForm is directly in this component
+// No icon imports needed!
 
-// Define a type for social links (if used directly in this component)
+// Define a type for social links
 interface SocialLink {
   name: string;
-  icon: string;
+  icon: string; // Now just a string for the Unicode emoji or character
   url: string;
-  colorClass: string;
+  colorClass: string; // Tailwind class for text/hover color
 }
 
-// Define your social media links data (if used directly in this component)
+// Define your social media links data
 const socialLinks: SocialLink[] = [
   {
     name: 'LinkedIn',
-    icon: '🔗',
-    url: 'https://www.linkedin.com/in/madhav-upadhyay-cs-company-secretary-b8924b172/',
+    icon: '🔗', // Unicode link emoji
+    url: 'https://www.linkedin.com/in/madhav-upadhyay-cs-company-secretary-b8924b172/', // Replace with actual LinkedIn URL
     colorClass: 'text-blue-700 hover:text-blue-900',
   },
   {
     name: 'Twitter (X)',
-    icon: '🔗',
-    url: 'https://twitter.com/YourCompanyCS',
+    icon: '🔗', // Unicode link emoji
+    url: 'https://twitter.com/YourCompanyCS', // Replace with actual X/Twitter URL
     colorClass: 'text-gray-900 hover:text-gray-700',
   },
+  // Add more social media links as needed
+  // {
+  //   name: 'Facebook',
+  //   icon: '🔗',
+  //   url: 'https://facebook.com/YourCompanyCS',
+  //   colorClass: 'text-blue-600 hover:text-blue-800',
+  // },
 ];
 
 
-// This is likely the component that was previously named ContactSection
-// but the error trace points to ContactUsSection.tsx
-export default function ContactUsSection() { // Renamed from ContactSection based on error trace
-  // If this component uses useState or useEffect, it needs "use client"
-  // For example, if it had a form or interactive elements directly within it.
-
-  // Assuming this component contains the structure you previously provided for ContactSection
+export default function ContactSection() {
   return (
     <section
       id="contact"
@@ -71,8 +70,7 @@ export default function ContactUsSection() { // Renamed from ContactSection base
           <p className="flex items-start text-gray-800 font-medium">
             <span className="text-indigo-600 text-2xl mr-3 flex-shrink-0 mt-1">🏢</span> {/* Office/Building Emoji */}
             <strong>Address:</strong>{" "}
-            {/* Assuming Link is imported from "next/link" */}
-            <a // Changed Link to 'a' tag to avoid Next.js Link import dependency if not needed
+            <Link
               href={`https://www.google.com/maps/search/401,+Legal+Heights,+Rajkot,+Gujarat,+India`}
               target="_blank"
               rel="noopener noreferrer"
@@ -81,7 +79,7 @@ export default function ContactUsSection() { // Renamed from ContactSection base
               401, Legal Heights,
               <br />
               Rajkot, Gujarat, India
-            </a>
+            </Link>
           </p>
           
           {/* Enhanced Social Media Links without specific icons */}
@@ -93,6 +91,7 @@ export default function ContactUsSection() { // Renamed from ContactSection base
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Link to our ${social.name} profile`}
+                // Apply a consistent size to the emoji via font-size
                 className={`flex items-center justify-center rounded-full p-2 text-2xl transition-colors duration-200 ${social.colorClass}`}
               >
                 {social.icon} {/* Render the emoji */}
@@ -105,10 +104,9 @@ export default function ContactUsSection() { // Renamed from ContactSection base
         <div className="lg:w-1/2 bg-gray-50 p-6 sm:p-8 rounded-lg border border-gray-200 flex flex-col justify-center items-center text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Send Us a Message</h3>
           <p className="text-gray-600 mb-6">
-            We&apos;d love to hear from you. Fill out the form below and we&apos;ll get back to you shortly.
+            We'd love to hear from you. Fill out the form below and we'll get back to you shortly.
           </p>
-          {/* Assuming ContactForm is imported from "../components/contactForm" */}
-          {/* <ContactForm /> */} {/* Uncomment if ContactForm is used here */}
+          <ContactForm />
         </div>
       </div>
     </section>
