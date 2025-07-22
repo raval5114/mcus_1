@@ -31,7 +31,6 @@ const socialLinks: SocialLink[] = [
   //   icon: '🔗',
   //   url: 'https://facebook.com/YourCompanyCS',
   //   colorClass: 'text-blue-600 hover:text-blue-800',
-  // },
 ];
 
 
