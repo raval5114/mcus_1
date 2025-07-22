@@ -16,7 +16,7 @@ export default function ClientsSection({ clients = [] }: { clients?: Client[] })
     >
       <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 md:mb-10 text-gray-900">Our Valued Clients</h2>
       <p className="text-lg text-center leading-relaxed max-w-3xl mx-auto mb-12 text-gray-700">
-        We're proud to partner with a diverse range of **startups, SMEs, and established corporations** across various industries, helping them achieve their corporate governance and compliance goals.
+        We&apos;re proud to partner with a diverse range of **startups, SMEs, and established corporations** across various industries, helping them achieve their corporate governance and compliance goals.
       </p>
 
       {/* Horizontal Scrolling Container */}

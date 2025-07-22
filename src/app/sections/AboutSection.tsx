@@ -19,13 +19,13 @@ export default function AboutSection() {
           {/* Right Column: Narrative Text */}
           <div className="lg:w-2/3 text-base sm:text-lg font-medium leading-relaxed text-gray-700 space-y-5 sm:space-y-6">
             <p>
-              At the heart of our practice is **Madhav Upadhyay**, a highly qualified **Company Secretary** with a deep-rooted commitment to corporate excellence. With **years of experience** navigating the intricate landscape of **corporate law, compliance, and governance**, we don't just offer solutions; we build lasting partnerships based on **trust and strategic insight**.
+              At the heart of our practice is **Madhav Upadhyay**, a highly qualified **Company Secretary** with a deep-rooted commitment to corporate excellence. With **years of experience** navigating the intricate landscape of **corporate law, compliance, and governance**, we don&apos;t just offer solutions; we build lasting partnerships based on **trust and strategic insight**.
             </p>
             <p>
-              We believe that strong legal and compliance foundations are the bedrock of sustainable business growth. That's why we meticulously provide **reliable, confidential, and truly professional services**, ensuring every aspect of your business operations aligns with regulatory requirements while fostering **good governance practices**.
+              We believe that strong legal and compliance foundations are the bedrock of sustainable business growth. That&apos;s why we meticulously provide **reliable, confidential, and truly professional services**, ensuring every aspect of your business operations aligns with regulatory requirements while fostering **good governance practices**.
             </p>
             <p>
-              Whether you're an innovative **startup** charting new territories, a growing **MSME** looking for robust legal support, or an **established enterprise** seeking comprehensive compliance management, our **tailored approach** is designed to empower your journey. We translate complex legalities into **clear, actionable advice**, allowing you to focus on what you do best: **innovating and leading your industry**.
+              Whether you&apos;re an innovative **startup** charting new territories, a growing **MSME** looking for robust legal support, or an **established enterprise** seeking comprehensive compliance management, our **tailored approach** is designed to empower your journey. We translate complex legalities into **clear, actionable advice**, allowing you to focus on what you do best: **innovating and leading your industry**.
             </p>
           </div>
         </div>

@@ -104,7 +104,7 @@ export default function ContactSection() {
         <div className="lg:w-1/2 bg-gray-50 p-6 sm:p-8 rounded-lg border border-gray-200 flex flex-col justify-center items-center text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Send Us a Message</h3>
           <p className="text-gray-600 mb-6">
-            We'd love to hear from you. Fill out the form below and we'll get back to you shortly.
+            We&apos;d love to hear from you. Fill out the form below and we&apos;ll get back to you shortly.
           </p>
           <ContactForm />
         </div>
